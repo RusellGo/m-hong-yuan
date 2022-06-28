@@ -4,3 +4,35 @@ body {
   font-size: @middleFontSize;
   background-color: #f5f5f5;
 }
+
+// tags
+.tags {
+  display: flex;
+  margin: .8vw 0;
+}
+
+.tags .tag {
+  position: relative;
+  height: 3.2vw;
+  line-height: 3.2vw;
+  margin-right: .8vw;
+  padding: 0 .8vw;
+  font-size: @smallFontSize;
+  border: 1px solid @mainColor;
+  border-radius: .8vw;
+  color: @mainColor;
+
+  &.ticket {
+    padding-left: 5.6vw;
+  }
+
+  &.ticket::before {
+    content: '券';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0 .8vw;
+    background-color: @linghtBgColor;
+  }
+}
