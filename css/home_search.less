@@ -1,0 +1,51 @@
+@import url(./variables.less);
+
+.search {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 10.6667vw;
+  background-color: #fff;
+  overflow: hidden;
+
+  .area {
+    display: flex;
+    align-items: center;
+    width: 74.6667vw;
+    height: 7.4667vw;
+    margin: 1.3333vw 0 0 3.2vw;
+    box-sizing: border-box;
+    border: .2667vw solid red;
+    border-radius: 4vw;
+    font-size: 3.4667vw;
+    color: #999;
+
+    .icon {
+      width: 3.2vw;
+      height: 3.3333vw;
+      margin-left: 2.6667vw;
+      background: url(../img/search_icon.png) no-repeat center center/3.2vw 3.3333vw;
+    }
+
+    .text {
+      flex: 1;
+      margin: 0 32px 0 8px;
+    }
+  }
+
+  .login {
+    height: 7.46667vw;
+    margin: 1.3333vw 3.46667vw 0 0;
+    padding: 0 .5333vw;
+    box-sizing: border-box;
+    border: 1px solid #e31436;
+    border-radius: .5333vw;
+    text-align: center;
+    line-height: 7.46667vw;
+    font-size: @smallFontSize;
+    color: #e31436;
+  }
+}
