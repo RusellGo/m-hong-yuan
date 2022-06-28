@@ -1,0 +1,62 @@
+@import url(./variables.less);
+@import url(./mixins.less);
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .item {
+    width: 46.6667vw;
+    margin-top: 1.6vw;
+    border-radius: 1.3333vw;
+    color: #666;
+    background-color: #fff;
+    overflow: hidden;
+
+    &:nth-child(2n) {
+      margin-left: 1.6vw;
+    }
+
+    .album {
+      img {
+        width: 100%;
+      }
+    }
+
+    .info {
+      box-sizing: border-box;
+      padding: 2.6667vw;
+      font-size: @normalFontSize;
+
+      .company {
+        font-size: @smallFontSize;
+        text-indent: 5vw;
+      }
+
+      .model {
+        margin: .8vw 0;
+        text-indent: 9vw;
+        background: url(../img/self_icon.png) no-repeat left center/8vw 4vw;
+      }
+
+      .desc {
+        margin: .8vw 0;
+        .nowrap();
+      }
+
+      .price {
+        font-size: @smallFontSize;
+        color: @mainColor;
+
+        span {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  i {
+    width: 46.6667vw;
+  }
+}
